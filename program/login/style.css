@@ -1,0 +1,116 @@
+.container-login {
+    max-width: 45vi;
+    max-height: 65vh;
+    margin: 10vh auto;
+    padding: 4vh 3vw;
+
+    background: rgba(0, 0, 20, 0.75);
+    border: 1px solid rgba(224, 177, 14, 0.25);
+    border-radius: 16px;
+
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(6px);
+}
+
+/* Cabeçalho */
+.container-header {
+    height: 12vh;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.container-header h1 {
+    color: #e0b10e;
+    letter-spacing: 0.2vi;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.container-subtitle {
+    font-size: 0.95rem;
+    color: #ccc;
+    margin-top: 0.5rem;
+}
+
+/* Conteúdo */
+.container-content {
+    width: 100%;
+}
+
+/* Formulário */
+.container-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+/* Grupo */
+.formulario-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.formulario-group label {
+    font-size: 0.95rem;
+    color: #ddd;
+}
+
+.formulario-group input {
+    padding: 12px 14px;
+    border-radius: 8px;
+
+    border: 1px solid rgba(224, 177, 14, 0.25);
+    background: #000;
+
+    color: #fff;
+    font-size: 1rem;
+}
+
+.formulario-group input:focus {
+    outline: none;
+    border-color: #e0b10e;
+    box-shadow: 0 0 12px rgba(224, 177, 14, 0.4);
+}
+
+/* Botão */
+.btn {
+    margin-top: 0.5rem;
+    padding: 12px 24px;
+
+    background: transparent;
+    border: 2px solid #e0b10e;
+    color: #e0b10e;
+
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 10px;
+
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #e0b10e;
+    color: #000;
+    box-shadow: 0 0 20px #e0b10e;
+}
+
+/* Footer do formulário */
+.formulario-footer {
+    margin-top: 1.2rem;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #aaa;
+}
+
+.formulario-footer a {
+    color: #e0b10e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.formulario-footer a:hover {
+    text-shadow: 0 0 8px #e0b10e;
+}
