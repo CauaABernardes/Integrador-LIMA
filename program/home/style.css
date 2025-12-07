@@ -1,0 +1,33 @@
+.sobre-loja {
+    max-width: 70vi;
+    margin: 0 auto;
+    padding: 6vh 2vw;
+
+    background: rgba(0, 0, 20, 0.6);
+    border: 1px solid rgba(224, 177, 14, 0.15);
+    border-radius: 16px;
+
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.sobre-loja-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.sobre-loja-header h1 {
+    font-size: 2.2rem;
+    color: #e0b10e;
+    letter-spacing: 0.3vi;
+    text-transform: uppercase;
+    text-shadow: 0 0 12px rgba(224, 177, 14, 0.6);
+}
+
+.sobre-loja-conteudo p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #e6e6e6;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
