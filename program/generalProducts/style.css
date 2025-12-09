@@ -1,0 +1,144 @@
+.banner-principal {
+    width: 100%;
+    height: 75vh;
+    background: url('../src/images/banner.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+/* Overlay escuro */
+.banner-principal::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 1;
+}
+
+.banner-principal::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 0 -200px;
+    width: 200px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    animation: bannerLight 5s linear infinite;
+    z-index: 2; /* fica acima do after */
+}
+
+.banner-content {
+    position: relative;
+    z-index: 3; /* txt vai ficar por cima */
+    text-align: center;
+    color: #ffffff;
+    padding: 2rem;
+}
+
+.banner-content h1 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-banner {
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    background-color: #e0b10e;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background .3s ease, transform .3s ease;
+}
+
+.btn-banner:hover {
+    background-color: #fff;
+    transform: translateY(-3px);
+}
+
+/*PRODUTOS*/
+.categorias {
+    padding: 4rem 2rem;
+    max-width: 90vi;
+    margin: auto;
+}
+
+.categorias h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #e0b10e;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2vi;
+}
+
+.categorias-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(18vi, 1fr));
+}
+
+/* CARD */
+.categoria-card {
+    background: #000;
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 14px;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: transform .3s ease, border-color .3s ease;
+}
+
+.categoria-card:hover {
+    transform: translateY(-6px);
+    border-color: #e0b10e;
+}
+
+.categoria-card figure {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.categoria-card img {
+    width: 70%;
+    border-radius: 10px;
+}
+
+.categoria-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.7rem;
+    color: #e0b10e;
+}
+
+.categoria-card p {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+/* Botão do Card */
+.btn-card {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: #e0b10e;
+    color: #000;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background .3s ease, transform .3s ease;
+}
+
+.btn-card:hover {
+    background: #fff;
+    transform: translateY(-3px);
+}
