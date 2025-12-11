@@ -1,142 +1,130 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../src/images/iconsAndCards/logo_icon.png" type="image/png">
-    <link rel="stylesheet" href="../src/styles/global.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>    
-    <title>Star Tralhas - Sobre Nós</title>
-</head>
-<body>
-    <header>
-        <figure id = "logo"><img src = "../src/images/iconsAndCards/logo.png" alt="Logo do Star Tralhas"/></figure>
-        <nav>
-            <ul>
-                <li><a class="opcaoNav" href="../home/index.html">Sobre Nós</a></li>
-                <li><a class="opcaoNav" href="../generalProducts/index.html">Produtos</a></li>
-                <li>
-                    <a class="opcaoNav" href="../shoppingCart/index.html">
-                        <span class="material-symbols-outlined">
-                            shopping_cart
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a class="opcaoNav" id="pgAtual" href="../login/index.html">
-                        <span class="material-symbols-outlined">
-                            account_circle
-                        </span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section class="container-login" aria-labelledby="login-titulo">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="icon" href="../src/images/iconsAndCards/logo_icon.png" type="image/png"/>
+        <link rel="stylesheet" href="../src/styles/global.css"/>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>    
+        <title>Star Tralhas - Sobre Nós</title>
+    </head>
+    <body>
+        <header>
+            <figure id = "logo"><img src = "../src/images/iconsAndCards/logo.png" alt="Logo do Star Tralhas"/></figure>
+            <nav>
+                <ul>
+                    <li><a class="opcaoNav" href="../home/index.html">Sobre Nós</a></li>
+                    <li><a class="opcaoNav" href="../generalProducts/index.html">Produtos</a></li>
+                    <li>
+                        <a class="opcaoNav" href="../shoppingCart/index.html">
+                            <span class="material-symbols-outlined">
+                                shopping_cart
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="opcaoNav" id="pgAtual" href="../login/index.html">
+                            <span class="material-symbols-outlined">
+                                account_circle
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section class="containerLogin" aria-labelledby="loginTitulo">
 
-            <header class="container-header">
-                <h1 id="login-titulo">Acesse sua Conta</h1>
-                <p class="container-subtitle">
-                    Entre para acessar sua área galáctica e gerenciar seus pedidos.
-                </p>
-            </header>
+                <header class="containerHeader">
+                    <h1 id="loginTitulo">Acesse sua Conta</h1>
+                    <p class="container-subtitle">
+                        Entre para acessar sua área galáctica e gerenciar seus pedidos.
+                    </p>
+                </header>
 
-            <article class="container-content">
-                <form class="container-form">
-                    <div class="formulario-group">
-                        <label for="email">E-mail</label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="Digite seu e-mail"
-                            required
-                        >
+                <article class="containerContent">
+                    <form class="container-form">
+                        <div class="formularioGroup">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required />
+                        </div>
+
+                        <div class="formularioGroup">
+                            <label for="senha">Senha</label>
+                            <input type="password" id="senha" name="senha" placeholder="Digite sua senha" />
+                        </div>
+
+                        <button type="submit" class="btn">Entrar</button>
+
+                        <footer class="formularioFooter">
+                            <p>
+                                Não tem uma conta?
+                                <a href="../register/index.html">Cadastre-se</a>
+                            </p>
+                            <p>
+                                É um administrador?
+                                <a href="../admPage/index.html">Entre aqui</a>
+                            </p>
+                        </footer>
+
+                    </form>
+                </article>
+
+            </section>
+        </main>
+
+        <footer class="siteFooter">
+            <div class="footerContainer">
+
+                <section class="footerCol">
+                    <h3>Star Tralhas</h3>
+                    <p>
+                        Loja especializada em itens colecionáveis, decorativos e geek.
+                        Qualidade e tradição em toda a galáxia.
+                    </p>
+                </section>
+
+                <section class="footerCol">
+                    <h3>Atendimento</h3>
+                    <ul>
+                        <li><a href="#">Fale Conosco</a></li>
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">Trocas e Devoluções</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </section>
+
+                <section class="footerCol">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li>Telefone: (11) 99999-9999</li>
+                        <li>Email: contato@startralhas.com</li>
+                        <li>Seg–Sex: 09h às 18h</li>
+                    </ul>
+                </section>
+
+                <section class="footerCol">
+                    <h3>Siga-nos</h3>
+                    <div class="footerSocial">
+                        <a href="#" aria-label="Instagram">
+                            <span class="material-symbols-outlined">photo_camera</span>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <span class="material-symbols-outlined">public</span>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <span class="material-symbols-outlined">alternate_email</span>
+                        </a>
                     </div>
+                </section>
 
-                    <div class="formulario-group">
-                        <label for="senha">Senha</label>
-                        <input
-                            type="password"
-                            id="senha"
-                            name="senha"
-                            placeholder="Digite sua senha"
-                            required
-                        >
-                    </div>
-
-                    <button type="submit" class="btn">Entrar</button>
-
-                    <footer class="formulario-footer">
-                        <p>
-                            Não tem uma conta?
-                            <a href="../register/index.html">Cadastre-se</a>
-                        </p>
-                        <p>
-                            É um administrador?
-                            <a href="../admPage/index.html">Entre aqui</a>
-                        </p>
-                    </footer>
-
-                </form>
-            </article>
-
-        </section>
-    </main>
-
-    <footer class="site-footer">
-    <div class="footer-container">
-
-        <section class="footer-col">
-            <h3>Star Tralhas</h3>
-            <p>
-                Loja especializada em itens colecionáveis, decorativos e geek.
-                Qualidade e tradição em toda a galáxia.
-            </p>
-        </section>
-
-        <section class="footer-col">
-            <h3>Atendimento</h3>
-            <ul>
-                <li><a href="#">Fale Conosco</a></li>
-                <li><a href="#">Central de Ajuda</a></li>
-                <li><a href="#">Trocas e Devoluções</a></li>
-                <li><a href="#">Política de Privacidade</a></li>
-            </ul>
-        </section>
-
-        <section class="footer-col">
-            <h3>Contato</h3>
-            <ul>
-                <li>Telefone: (11) 99999-9999</li>
-                <li>Email: contato@startralhas.com</li>
-                <li>Seg–Sex: 09h às 18h</li>
-            </ul>
-        </section>
-
-        <section class="footer-col">
-            <h3>Siga-nos</h3>
-            <div class="footer-social">
-                <a href="#" aria-label="Instagram">
-                    <span class="material-symbols-outlined">photo_camera</span>
-                </a>
-                <a href="#" aria-label="Facebook">
-                    <span class="material-symbols-outlined">public</span>
-                </a>
-                <a href="#" aria-label="Twitter">
-                    <span class="material-symbols-outlined">alternate_email</span>
-                </a>
             </div>
-        </section>
 
-    </div>
-
-    <div class="footer-bottom">
-        <p>© 2025 Star Tralhas - Todos os direitos reservados</p>
-    </div>
-</footer>
-</body>
+            <div class="footerBottom">
+                <p>© 2025 Star Tralhas - Todos os direitos reservados</p>
+            </div>
+        </footer>
+    </body>
 </html>

@@ -1,4 +1,4 @@
-.sobre-loja {
+.sobreLoja {
     max-width: 70vi;
     margin: 0 auto;
     padding: 6vh 2vw;
@@ -11,12 +11,12 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
-.sobre-loja-header {
+.sobreLojaHeader {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-.sobre-loja-header h1 {
+.sobreLojaHeader h1 {
     font-size: 2.2rem;
     color: #e0b10e;
     letter-spacing: 0.3vi;
@@ -24,7 +24,7 @@
     text-shadow: 0 0 12px rgba(224, 177, 14, 0.6);
 }
 
-.sobre-loja-conteudo p {
+.sobreLojaConteudo p {
     font-size: 1.05rem;
     line-height: 1.8;
     color: #e6e6e6;

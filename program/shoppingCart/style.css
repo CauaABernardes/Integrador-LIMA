@@ -1,10 +1,10 @@
-.carrinho-main {
+.carrinhoMain {
     padding: 4rem 2rem;
     max-width: 1200px;
     margin: auto;
 }
 
-.carrinho-main .section-title {
+.carrinhoMain .sectionTitle {
     text-align: center;
     font-size: 2rem;
     color: #e0b10e;
@@ -12,14 +12,14 @@
     text-transform: uppercase;
 }
 
-.carrinho-container {
+.carrinhoContainer {
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     margin-bottom: 3rem;
 }
 
-.produto-carrinho {
+.produtoCarrinho {
     background: #222;
     border-radius: 14px;
     padding: 1.3rem;
@@ -32,12 +32,12 @@
     transition: transform .3s, border-color .3s;
 }
 
-.produto-carrinho:hover {
+.produtoCarrinho:hover {
     transform: translateY(-6px);
     border-color: #e0b10e;
 }
 
-.produto-carrinho .produto-imagem {
+.produtoCarrinho .produtoImagem {
     width: 100%;
     max-height: 25vh;
     object-fit: contain;
@@ -47,7 +47,7 @@
     padding: 10px;
 }
 
-.produto-carrinho .produto-info {
+.produtoCarrinho .produtoInfo {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -55,30 +55,30 @@
     width: 100%;
 }
 
-.produto-carrinho h3 {
+.produtoCarrinho h3 {
     font-size: 1.2rem;
     color: #e0b10e;
     margin-bottom: 0.5rem;
 }
 
-.produto-carrinho .preco {
+.produtoCarrinho .preco {
     margin-bottom: 1.5rem;
 }
 
-.produto-carrinho .preco .de {
+.produtoCarrinho .preco .de {
     text-decoration: line-through;
     color: #aaa;
     font-size: 0.9rem;
     margin-right: 0.5rem;
 }
 
-.produto-carrinho .preco .por {
+.produtoCarrinho .preco .por {
     color: #e0b10e;
     font-size: 1.2rem;
     font-weight: bold;
 }
 
-.produto-carrinho .btn {
+.produtoCarrinho .btn {
     padding: 0.6rem 1.2rem;
     background: #e0b10e;
     color: #000;
@@ -90,13 +90,13 @@
     transition: background .3s, transform .3s;
 }
 
-.produto-carrinho .btn:hover {
+.produtoCarrinho .btn:hover {
     background: #000;
     color: #e0b10e;
     transform: translateY(-3px);
 }
 
-.resumo-carrinho {
+.resumoCarrinho {
     background: #111;
     color: #fff;
     padding: 2rem;
@@ -105,23 +105,23 @@
     border: 2px solid #333;
 }
 
-.resumo-carrinho h3 {
+.resumoCarrinho h3 {
     color: #e0b10e;
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
 
-.resumo-carrinho p {
+.resumoCarrinho p {
     margin: 0.5rem 0;
     font-size: 1.1rem;
 }
 
-.resumo-carrinho strong {
+.resumoCarrinho strong {
     color: #ffe81f;
     font-size: 1.3rem;
 }
 
-.resumo-carrinho .btn {
+.resumoCarrinho .btn {
     margin-top: 1.5rem;
     padding: 0.8rem 1.6rem;
     background: #e0b10e;
@@ -132,7 +132,7 @@
     text-decoration: none;
 }
 
-.resumo-carrinho .btn:hover {
+.resumoCarrinho .btn:hover {
     background: #000;
     color: #e0b10e;
     transform: translateY(-3px);

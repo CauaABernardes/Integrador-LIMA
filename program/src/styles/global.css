@@ -90,14 +90,14 @@ header ul {
 }
 
 /*footer*/
-.site-footer {
+.siteFooter {
     background: linear-gradient(to top, #000, #02021a);
     padding: 4vh 4vw 2vh;
     border-top: 2px solid rgba(224, 177, 14, 0.2);
 }
 
 /*Em grade para melhor visualização*/
-.footer-container {
+.footerContainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 3vw;
@@ -105,25 +105,25 @@ header ul {
     margin: auto;
 }
 
-.footer-col h3 {
+.footerCol h3 {
     color: #e0b10e;
     margin-bottom: 1rem;
     letter-spacing: 1px;
 }
 
-.footer-col p, .footer-col li {
+.footerCol p, .footerCol li {
     font-size: 0.95rem;
     color: #ccc;
     line-height: 1.6;
 }
 
-.footer-col ul {
+.footerCol ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.footer-col a {
+.footerCol a {
     text-decoration: none;
     color: #ccc;
     transition: 0.3s ease;
@@ -135,24 +135,24 @@ header ul {
 }
 
 /* Redes sociais */
-.footer-social {
+.footerSocial {
     display: flex;
     gap: 1rem;
 }
 
-.footer-social a {
+.footerSocial a {
     font-size: 1.6rem;
     color: #e0b10e;
     transition: 0.3s ease;
 }
 
-.footer-social a:hover {
+.footerSocial a:hover {
     transform: translateY(-3px);
     text-shadow: 0 0 12px #e0b10e;
 }
 
 /*Parte inferior do footer*/
-.footer-bottom {
+.footerBottom {
     text-align: center;
     margin-top: 3vh;
     padding-top: 2vh;
