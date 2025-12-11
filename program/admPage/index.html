@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../src/images/iconsAndCards/logo_icon.png" type="image/png">
+    <link rel="stylesheet" href="../src/styles/global.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>    
+    <title>Administração</title>
+</head>
+<body>
+    <header>
+        <figure id = "logo"><img src = "../src/images/iconsAndCards/logo.png" alt="Logo do Star Tralhas"/></figure>
+        <nav>
+            <ul>
+                <li><a class="opcaoNav" href="../home/index.html">Sobre Nós</a></li>
+                <li><a class="opcaoNav" href="../generalProducts/index.html">Produtos</a></li>
+                <li>
+                    <a class="opcaoNav" href="#">
+                        <span class="material-symbols-outlined">
+                            shopping_cart
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="opcaoNav" id="pgAtual" href="../login/index.html">
+                        <span class="material-symbols-outlined">
+                            account_circle
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="admin-main">
+
+        <section class="dashboard">
+            <h2 class="section-title">Dashboard de Vendas</h2>
+
+            <div class="dashboard-grid">
+
+                <div class="dash-card">
+                    <h3>Total de Produtos Cadastrados</h3>
+                    <p class="dash-number">28</p>
+                </div>
+
+                <div class="dash-card">
+                    <h3>Produtos com Desconto</h3>
+                    <p class="dash-number">11</p>
+                </div>
+
+                <div class="dash-card">
+                    <h3>Mais Vendido da Semana</h3>
+                    <p class="dash-highlight">Sabre de Luz do Anakin</p>
+                </div>
+
+            </div>
+
+            <div class="ranking-vendas">
+                <h3 class="ranking-title">Ranking dos Mais Vendidos</h3>
+
+                <div class="rank-item">
+                    <span>Sabre de Luz do Anakin</span>
+                    <div class="barra">
+                        <div class="progresso" style="width: 95%;"></div>
+                    </div>
+                    <small>95 vendas</small>
+                </div>
+
+                <div class="rank-item">
+                    <span>Mandaloriano</span>
+                    <div class="barra">
+                        <div class="progresso" style="width: 82%;"></div>
+                    </div>
+                    <small>82 vendas</small>
+                </div>
+
+                <div class="rank-item">
+                    <span>Darth Vader (Ferido em Batalha)</span>
+                    <div class="barra">
+                        <div class="progresso" style="width: 74%;"></div>
+                    </div>
+                    <small>74 vendas</small>
+                </div>
+
+                <div class="rank-item">
+                    <span>Stormtrooper (Batalha de Takodana)</span>
+                    <div class="barra">
+                        <div class="progresso" style="width: 63%;"></div>
+                    </div>
+                    <small>63 vendas</small>
+                </div>
+
+                <div class="rank-item">
+                    <span>Luke Skywalker (Episódio V)</span>
+                    <div class="barra">
+                        <div class="progresso" style="width: 52%;"></div>
+                    </div>
+                    <small>52 vendas</small>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="todos-produtos">
+            <h2 class="section-title">Todos os Produtos Cadastrados</h2>
+
+            <div class="produtos-grid">
+
+                <article class="produto-card">
+                    <figure>
+                        <img src="../src/images/actionsFigures/product1.png" alt="Darth Vader (Sobrevivente)">
+                    </figure>
+
+                    <h3>Action Figure – Darth Vader (Sobrevivente)</h3>
+
+                    <p class="preco">
+                        <span class="de">R$ 2.249,90</span>
+                        <span class="por">R$ 1.699,90</span>
+                    </p>
+
+                    <a href="#" class="btn">Editar Produto</a>
+                </article>
+
+                <article class="produto-card">
+                    <figure>
+                        <img src="../src/images/actionsFigures/product2.png" alt="Anakin Skywalker (Mantos Jedi)">
+                    </figure>
+
+                    <h3>Action Figure – Anakin Skywalker (Mantos Jedi)</h3>
+
+                    <p class="preco">
+                        <span class="de">R$ 1.249,90</span>
+                        <span class="por">R$ 749,90</span>
+                    </p>
+
+                    <a href="#" class="btn">Editar Produto</a>
+                </article>
+
+                <article class="produto-card">
+                    <figure>
+                        <img src="../src/images/actionsFigures/product3.png" alt="Luke Skywalker (Episódio V)">
+                    </figure>
+
+                    <h3>Action Figure – Luke Skywalker (Episódio V)</h3>
+
+                    <p class="preco">
+                        <span class="por">R$ 999,90</span>
+                    </p>
+
+                    <a href="#" class="btn">Editar Produto</a>
+                </article>
+
+                <article class="produto-card">
+                    <figure>
+                        <img src="../src/images/actionsFigures/product4.png" alt=Darth Vader (Ferido em batalha)">
+                    </figure>
+
+                    <h3>Action Figure – Darth Vader (Ferido em batalha)</h3>
+
+                    <p class="preco">
+                        <span class="por">R$ 2.349,90</span>
+                    </p>
+
+                    <a href="#" class="btn">Editar Produto</a>
+                </article>
+
+                <article class="produto-card">
+                    <figure>
+                        <img src="../src/images/actionsFigures/product5.png" alt="Anakin Skywalker (Sem mantos Jedi)">
+                    </figure>
+
+                    <h3>Action Figure – Anakin Skywalker (Sem mantos Jedi)</h3>
+
+                    <p class="preco">
+                        <span class="por">R$ 599,90</span>
+                    </p>
+
+                    <a href="#" class="btn">Editar Produto</a>
+                </article>
+
+                <article class="produto-card">
+                    <figure>
+                        <img src="../src/images/actionsFigures/extra_prd1.png" alt="Stormtrooper (Batalha em Takodana)">
+                    </figure>
+
+                    <h3>Action Figure – Stormtrooper (Batalha em Takodana)</h3>
+
+                    <p class="preco">
+                        <span class="por">R$ 399,90</span>
+                    </p>
+
+                    <a href="#" class="btn">Editar Produto</a>
+                </article>
+
+                <article class="produto-card">
+                    <figure>
+                        <img src="../src/images/actionsFigures/extra_prd2.png" alt="Mandaloriano">
+                    </figure>
+
+                    <h3>Action Figure – Mandaloriano</h3>
+
+                    <p class="preco">
+                        <span class="por">R$ 1.099,90</span>
+                    </p>
+
+                    <a href="#" class="btn">Editar Produto</a>
+                </article>
+
+                <article class="produto-card">
+                    <figure>
+                        <img src="../src/images/actionsFigures/extra_prd3.png" alt="Imperador Palpatine (Trono Galáctico)">
+                    </figure>
+
+                    <h3>Action Figure – Imperador Palpatine (Trono Galáctico)</h3>
+
+                    <p class="preco">
+                        <span class="por">R$ 1.249,90</span>
+                    </p>
+
+                    <a href="#" class="btn">Editar Produto</a>
+                </article>
+
+                <article class="produto-card">
+                    <figure>
+                        <img src="../src/images/others/product16.png" alt="Moletom The Mandalorian">
+                    </figure>
+
+                    <h3>Roupa – Moletom The Mandalorian</h3>
+
+                    <p class="preco">
+                        <span class="de">R$ 209,90</span>
+                        <span class="por">R$ 109,90</span>
+                    </p>
+
+                    <a href="#" class="btn">Editar Produto</a>
+                </article>
+
+                <article class="produto-card">
+                    <figure>
+                        <img src="../src/images/costumes/product7.png" alt="Camiseta Darth Vader">
+                    </figure>
+
+                    <h3>Roupa – Camiseta Darth Vader</h3>
+
+                    <p class="preco">
+                        <span class="de">R$ 99,90</span>
+                        <span class="por">R$ 69,90</span>
+                    </p>
+
+                    <a href="#" class="btn">Editar Produto</a>
+                </article>
+
+                <article class="produto-card">
+                    <figure>
+                        <img src="../src/images/costumes/product8.png" alt="Camisa Grogu (Baby Yoda)">
+                    </figure>
+
+                    <h3>Roupa – Camisa Grogu (Baby Yoda)</h3>
+
+                    <p class="preco">
+                        <span class="por">R$ 59,90</span>
+                    </p>
+
+                    <a href="#" class="btn">Editar Produto</a>
+                </article>
+
+                <article class="produto-card">
+                    <figure>
+                        <img src="../src/images/costumes/product9.png" alt="Moletom Aliança Rebelde">
+                    </figure>
+
+                    <h3>Roupa – Moletom Aliança Rebelde</h3>
+
+                    <p class="preco">
+                        <span class="por">R$ 249,90</span>
+                    </p>
+
+                    <a href="#" class="btn">Editar Produto</a>
+                </article>
+
+                <article class="produto-card">
+                    <figure>
+                        <img src="../src/images/costumes/product10.png" alt="Gorro Grogu (Baby Yoda)">
+                    </figure>
+
+                    <h3>Roupa – Gorro Grogu (Baby Yoda)</h3>
+
+                    <p class="preco">
+                        <span class="por">R$ 49,90</span>
+                    </p>
+
+                    <a href="#" class="btn">Editar Produto</a>
+                </article>
+
+                <article class="produto-card">
+                    <figure>
+                        <img src="../src/images/costumes/extra_prd4.png" alt="Par de Meias Star Wars">
+                    </figure>
+
+                    <h3>Roupa – Par de Meias Star Wars</h3>
+
+                    <p class="preco">
+                        <span class="de">R$29,90</span>
+                        <span class="por">R$ 19,90</span>
+                    </p>
+
+                    <a href="#" class="btn">Editar Produto</a>
+                </article>
+
+                <article class="produto-card">
+                    <figure>
+                        <img src="../src/images/costumes/extra_prd5.png" alt="Camiseta Star Wars">
+                    </figure>
+
+                    <h3>Roupa – Camiseta Star Wars</h3>
+
+                    <p class="preco">
+                        <span class="por">R$ 79,90</span>
+                    </p>
+
+                    <a href="#" class="btn">Editar Produto</a>
+                </article>
+
+                <article class="produto-card">
+                    <figure>
+                        <img src="../src/images/costumes/extra_prd6.png" alt="Samba Canção Darth Vader">
+                    </figure>
+
+                    <h3>Roupa – Samba Canção Darth Vader</h3>
+
+                    <p class="preco">
+                        <span class="por">R$ 24,90</span>
+                    </p>
+
+                    <a href="#" class="btn">Editar Produto</a>
+                </article>
+
+                <article class="produto-card">
+                    <figure>
+                        <img src="../src/images/games/product11.png" alt="Star Wars Jedi: Survivor">
+                    </figure>
+
+                    <h3>Jogo – Star Wars Jedi: Survivor</h3>
+
+                    <p class="preco">
+                        <span class="de">R$ 279,90</span>
+                        <span class="por">R$ 159,90</span>
+                    </p>
+
+                    <a href="#" class="btn">Editar Produto</a>
+                </article>
+
+                <article class="produto-card">
+                    <figure>
+                        <img src="../src/images/games/product12.png" alt="Star Wars Outlaws">
+                    </figure>
+
+                    <h3>Jogo – Star Wars Outlaws</h3>
+
+                    <p class="preco">
+                        <span class="de">R$ 349,90</span>
+                        <span class="por">R$ 249,90</span>
+                    </p>
+
+                    <a href="#" class="btn">Editar Produto</a>
+                </article>
+
+                <article class="produto-card">
+                    <figure>
+                        <img src="../src/images/games/product13.png" alt="Star Wars: The Deckbuilding Game">
+                    </figure>
+
+                    <h3>Jogo – Star Wars: The Deckbuilding Game</h3>
+
+                    <p class="preco">
+                        <span class="por">R$ 79,90</span>
+                    </p>
+
+                    <a href="#" class="btn">Editar Produto</a>
+                </article>
+
+                <article class="produto-card">
+                    <figure>
+                        <img src="../src/images/games/product14.png" alt="LEGO Star Wars: The Skywalker Saga">
+                    </figure>
+
+                    <h3>Jogo – LEGO Star Wars: The Skywalker Saga</h3>
+
+                    <p class="preco">
+                        <span class="por">R$ 149,90</span>
+                    </p>
+
+                    <a href="#" class="btn">Editar Produto</a>
+                </article>
+
+                <article class="produto-card">
+                    <figure>
+                        <img src="../src/images/games/product15.png" alt="Star Wars Battlefront II">
+                    </figure>
+
+                    <h3>Jogo – Star Wars Battlefront II</h3>
+
+                    <p class="preco">
+                        <span class="por">R$ 89,90</span>
+                    </p>
+
+                    <a href="#" class="btn">Editar Produto</a>
+                </article>
+
+                <article class="produto-card">
+                    <figure>
+                        <img src="../src/images/games/extra_prd7.png" alt="Star Wars Unlimited: Shadows Of The Galaxy">
+                    </figure>
+
+                    <h3>Jogo – Star Wars Unlimited: Shadows Of The Galaxy</h3>
+
+                    <p class="preco">
+                        <span class="de">R$ 449,90</span>
+                        <span class="por">R$ 269,90</span>
+                    </p>
+
+                    <a href="#" class="btn">Editar Produto</a>
+                </article>
+
+                <article class="produto-card">
+                    <figure>
+                        <img src="../src/images/others/product16.png" alt="Sabre de Luz Anakin">
+                    </figure>
+
+                    <h3>Outros – Sabre de Luz Anakin</h3>
+
+                    <p class="preco">
+                        <span class="de">R$ 1.799,90</span>
+                        <span class="por">R$ 999,90</span>
+                    </p>
+
+                    <a href="#" class="btn">Editar Produto</a>
+                </article>
+
+                <article class="produto-card">
+                    <figure>
+                        <img src="../src/images/others/product17.png" alt="Sabre de Luz Kylo Ren">
+                    </figure>
+
+                    <h3>Outros – Sabre de Luz Kylo Ren</h3>
+
+                    <p class="preco">
+                        <span class="por">R$ 1.249,90</span>
+                    </p>
+
+                    <a href="#" class="btn">Editar Produto</a>
+                </article>
+
+                <article class="produto-card">
+                    <figure>
+                        <img src="../src/images/others/product18.png" alt="Guarda-chuvas estilo Sabre Darth Vader">
+                    </figure>
+
+                    <h3>Outros – Guarda-chuvas estilo Sabre Darth Vader</h3>
+
+                    <p class="preco">
+                        <span class="de">R$ 159,90</span>
+                        <span class="por">R$ 99,90</span>
+                    </p>
+
+                    <a href="#" class="btn">Editar Produto</a>
+                </article>
+
+                <article class="produto-card">
+                    <figure>
+                        <img src="../src/images/others/product19.png" alt="Torradeira Darth Vader">
+                    </figure>
+
+                    <h3>Outros – Torradeira Darth Vader</h3>
+
+                    <p class="preco">
+                        <span class="por">R$ 409,90</span>
+                    </p>
+
+                    <a href="#" class="btn">Editar Produto</a>
+                </article>
+
+                <article class="produto-card">
+                    <figure>
+                        <img src="../src/images/others/product20.png" alt="Pipoqueira R2D2">
+                    </figure>
+
+                    <h3>Outros – Pipoqueira R2D2</h3>
+
+                    <p class="preco">
+                        <span class="de">R$ 1.989,90</span>
+                        <span class="por">R$ 889,90</span>
+                    </p>
+
+                    <a href="#" class="btn">Editar Produto</a>
+                </article>
+
+                <article class="produto-card">
+                    <figure>
+                        <img src="../src/images/others/extra_prd8.png" alt="Chaveiro Pop Mandaloriano">
+                    </figure>
+
+                    <h3>Outros – Chaveiro Pop Mandaloriano</h3>
+
+                    <p class="preco">
+                        <span class="por">R$ 19,90</span>
+                    </p>
+
+                    <a href="#" class="btn">Editar Produto</a>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+    <div class="footer-container">
+
+        <section class="footer-col">
+            <h3>Star Tralhas</h3>
+            <p>
+                Loja especializada em itens colecionáveis, decorativos e geek.
+                Qualidade e tradição em toda a galáxia.
+            </p>
+        </section>
+
+        <section class="footer-col">
+            <h3>Atendimento</h3>
+            <ul>
+                <li><a href="#">Fale Conosco</a></li>
+                <li><a href="#">Central de Ajuda</a></li>
+                <li><a href="#">Trocas e Devoluções</a></li>
+                <li><a href="#">Política de Privacidade</a></li>
+            </ul>
+        </section>
+
+        <section class="footer-col">
+            <h3>Contato</h3>
+            <ul>
+                <li>Telefone: (11) 99999-9999</li>
+                <li>Email: contato@startralhas.com</li>
+                <li>Seg–Sex: 09h às 18h</li>
+            </ul>
+        </section>
+
+        <section class="footer-col">
+            <h3>Siga-nos</h3>
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram">
+                    <span class="material-symbols-outlined">photo_camera</span>
+                </a>
+                <a href="#" aria-label="Facebook">
+                    <span class="material-symbols-outlined">public</span>
+                </a>
+                <a href="#" aria-label="Twitter">
+                    <span class="material-symbols-outlined">alternate_email</span>
+                </a>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 Star Tralhas - Todos os direitos reservados</p>
+    </div>
+</footer>
+</body>
+</html>

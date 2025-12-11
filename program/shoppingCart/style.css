@@ -1,0 +1,139 @@
+.carrinho-main {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.carrinho-main .section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #e0b10e;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+}
+
+.carrinho-container {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    margin-bottom: 3rem;
+}
+
+.produto-carrinho {
+    background: #222;
+    border-radius: 14px;
+    padding: 1.3rem;
+    border: 2px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    transition: transform .3s, border-color .3s;
+}
+
+.produto-carrinho:hover {
+    transform: translateY(-6px);
+    border-color: #e0b10e;
+}
+
+.produto-carrinho .produto-imagem {
+    width: 100%;
+    max-height: 25vh;
+    object-fit: contain;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    background: #111;
+    padding: 10px;
+}
+
+.produto-carrinho .produto-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.produto-carrinho h3 {
+    font-size: 1.2rem;
+    color: #e0b10e;
+    margin-bottom: 0.5rem;
+}
+
+.produto-carrinho .preco {
+    margin-bottom: 1.5rem;
+}
+
+.produto-carrinho .preco .de {
+    text-decoration: line-through;
+    color: #aaa;
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+}
+
+.produto-carrinho .preco .por {
+    color: #e0b10e;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.produto-carrinho .btn {
+    padding: 0.6rem 1.2rem;
+    background: #e0b10e;
+    color: #000;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background .3s, transform .3s;
+}
+
+.produto-carrinho .btn:hover {
+    background: #000;
+    color: #e0b10e;
+    transform: translateY(-3px);
+}
+
+.resumo-carrinho {
+    background: #111;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 14px;
+    text-align: center;
+    border: 2px solid #333;
+}
+
+.resumo-carrinho h3 {
+    color: #e0b10e;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.resumo-carrinho p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.resumo-carrinho strong {
+    color: #ffe81f;
+    font-size: 1.3rem;
+}
+
+.resumo-carrinho .btn {
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.6rem;
+    background: #e0b10e;
+    color: #000;
+    font-weight: bold;
+    border-radius: 8px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.resumo-carrinho .btn:hover {
+    background: #000;
+    color: #e0b10e;
+    transform: translateY(-3px);
+}
