@@ -68,3 +68,114 @@ O Star Tralhas tem como propósito entregar uma experiência simples e completa,
 - Área administrativa prática para gestão da loja
 
 -------------------------------------------------------------
+
+
+## 6. Estrutura do Projeto
+
+```
+program
+├── admPage
+│   ├── index.html
+│   └── style.css
+│
+├── generalProducts
+│   ├── index.html
+│   ├── style.css
+│   └── products
+│       ├── actionsFigures
+│       │   ├── index.html  <- index da categoria
+│       │   ├── product1
+│       │   │   └── index.html
+│       │   ├── product2
+│       │   │   └── index.html
+│       │   ├── product3
+│       │   │   └── index.html
+│       │   ├── product4
+│       │   │   └── index.html
+│       │   ├── product5
+│       │   │   └── index.html
+│       │   ├── extra_prd1
+│       │   │   └── index.html
+│       │   ├── extra_prd2
+│       │   │   └── index.html
+│       │   └── extra_prd3
+│           └── index.html
+│
+│       ├── costumes
+│       │   ├── index.html     <- index da categoria
+│       │   ├── product6
+│       │   │   └── index.html
+│       │   ├── product7
+│       │   │   └── index.html
+│       │   ├── product8
+│       │   │   └── index.html
+│       │   ├── product9
+│       │   │   └── index.html
+│       │   ├── product10
+│       │   │   └── index.html
+│       │   ├── extra_prd4
+│       │   │   └── index.html
+│       │   ├── extra_prd5
+│       │   │   └── index.html
+│       │   └── extra_prd6
+│           └── index.html
+│
+│       ├── games
+│       │   ├── index.html     <- index da categoria
+│       │   ├── product11
+│       │   │   └── index.html
+│       │   ├── product12
+│       │   │   └── index.html
+│       │   ├── product13
+│       │   │   └── index.html
+│       │   ├── product14
+│       │   │   └── index.html
+│       │   ├── product15
+│       │   │   └── index.html
+│       │   ├── extra_prd7
+│       │   │   └── index.html
+│       
+│       └── others
+│           ├── index.html     <- index da categoria
+│           ├── product16
+│           │   └── index.html
+│           ├── product17
+│           │   └── index.html
+│           ├── product18
+│           │   └── index.html
+│           ├── product19
+│           │   └── index.html
+│           ├── product20
+│           │   └── index.html
+│           └── extra_prd8
+│               └── index.html
+│
+├── home
+│   ├── index.html
+│   └── style.css
+│
+├── login
+│   ├── index.html
+│   └── style.css
+│
+├── register
+│   ├── index.html
+│   └── style.css
+│
+├── shoppingCart
+│   ├── index.html
+│   └── style.css
+│
+├── src
+│   └── images
+│       ├── actionsFigures
+│       ├── costumes
+│       ├── games
+│       ├── iconsAndCards
+│       └── others
+│
+└── styles
+    ├── global.css
+    ├── styleCategories.css
+    └── styleProducts.css
+```
