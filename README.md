@@ -78,77 +78,81 @@ program
 │   ├── index.html
 │   └── style.css
 │
-├── generalProducts
+├── contact
 │   ├── index.html
-│   ├── style.css
-│   └── products
-│       ├── actionsFigures
-│       │   ├── index.html  <- index da categoria
-│       │   ├── product1
-│       │   │   └── index.html
-│       │   ├── product2
-│       │   │   └── index.html
-│       │   ├── product3
-│       │   │   └── index.html
-│       │   ├── product4
-│       │   │   └── index.html
-│       │   ├── product5
-│       │   │   └── index.html
-│       │   ├── extra_prd1
-│       │   │   └── index.html
-│       │   ├── extra_prd2
-│       │   │   └── index.html
-│       │   └── extra_prd3
-│           └── index.html
+│   └── style.css
 │
-│       ├── costumes
-│       │   ├── index.html     <- index da categoria
-│       │   ├── product6
-│       │   │   └── index.html
-│       │   ├── product7
-│       │   │   └── index.html
-│       │   ├── product8
-│       │   │   └── index.html
-│       │   ├── product9
-│       │   │   └── index.html
-│       │   ├── product10
-│       │   │   └── index.html
-│       │   ├── extra_prd4
-│       │   │   └── index.html
-│       │   ├── extra_prd5
-│       │   │   └── index.html
-│       │   └── extra_prd6
-│           └── index.html
-│
-│       ├── games
-│       │   ├── index.html     <- index da categoria
-│       │   ├── product11
-│       │   │   └── index.html
-│       │   ├── product12
-│       │   │   └── index.html
-│       │   ├── product13
-│       │   │   └── index.html
-│       │   ├── product14
-│       │   │   └── index.html
-│       │   ├── product15
-│       │   │   └── index.html
-│       │   ├── extra_prd7
-│       │   │   └── index.html
-│       
-│       └── others
-│           ├── index.html     <- index da categoria
-│           ├── product16
-│           │   └── index.html
-│           ├── product17
-│           │   └── index.html
-│           ├── product18
-│           │   └── index.html
-│           ├── product19
-│           │   └── index.html
-│           ├── product20
-│           │   └── index.html
-│           └── extra_prd8
-│               └── index.html
+├── generalProducts
+│   ├── products
+│   │   ├── actionsFigures
+│   │   │   ├── extraPrd1
+│   │   │   │   └── index.html
+│   │   │   ├── extraPrd2
+│   │   │   │   └── index.html
+│   │   │   ├── extraPrd3
+│   │   │   │   └── index.html
+│   │   │   ├── product1
+│   │   │   │   └── index.html
+│   │   │   ├── product2
+│   │   │   │   └── index.html
+│   │   │   ├── product3
+│   │   │   │   └── index.html
+│   │   │   ├── product4
+│   │   │   │   └── index.html
+│   │   │   ├── product5
+│   │   │   │   └── index.html
+│   │   │   └── index.html   <- index da categoria
+│   │   │
+│   │   ├── costumes
+│   │   │   ├── extraPrd4
+│   │   │   │   └── index.html
+│   │   │   ├── extraPrd5
+│   │   │   │   └── index.html
+│   │   │   ├── extraPrd6
+│   │   │   │   └── index.html
+│   │   │   ├── product6
+│   │   │   │   └── index.html
+│   │   │   ├── product7
+│   │   │   │   └── index.html
+│   │   │   ├── product8
+│   │   │   │   └── index.html
+│   │   │   ├── product9
+│   │   │   │   └── index.html
+│   │   │   ├── product10
+│   │   │   │   └── index.html
+│   │   │   └── index.html   <- index da categoria
+│   │   │
+│   │   ├── games
+│   │   │   ├── extraPrd7
+│   │   │   │   └── index.html
+│   │   │   ├── product11
+│   │   │   │   └── index.html
+│   │   │   ├── product12
+│   │   │   │   └── index.html
+│   │   │   ├── product13
+│   │   │   │   └── index.html
+│   │   │   ├── product14
+│   │   │   │   └── index.html
+│   │   │   ├── product15
+│   │   │   │   └── index.html
+│   │   │   └── index.html   <- index da categoria
+│   │   │
+│   │   └── others
+│   │       ├── extraPrd8
+│   │       │   └── index.html
+│   │       ├── product16
+│   │       │   └── index.html
+│   │       ├── product17
+│   │       │   └── index.html
+│   │       ├── product18
+│   │       │   └── index.html
+│   │       ├── product19
+│   │       │   └── index.html
+│   │       ├── product20
+│   │       │   └── index.html
+│   │       └── index.html   <- index da categoria
+│   │
+│   └── index.html   <- index geral de produtos
 │
 ├── home
 │   ├── index.html
@@ -163,19 +167,65 @@ program
 │   └── style.css
 │
 ├── shoppingCart
+│   ├── payment
+│   │   └── index.html
 │   ├── index.html
 │   └── style.css
 │
 ├── src
-│   └── images
-│       ├── actionsFigures
-│       ├── costumes
-│       ├── games
-│       ├── iconsAndCards
-│       └── others
+│   ├── images
+│   │   ├── actionsFigures
+│   │   │   ├── extra_prd1.png
+│   │   │   ├── extra_prd2.png
+│   │   │   ├── extra_prd3.png
+│   │   │   ├── product1.png
+│   │   │   ├── product2.png
+│   │   │   ├── product3.png
+│   │   │   ├── product4.png
+│   │   │   ├── product5.png
+│   │   │   └── logo.png
+│   │   │
+│   │   ├── costumes
+│   │   │   ├── extra_prd4.png
+│   │   │   ├── extra_prd5.png
+│   │   │   ├── extra_prd6.png
+│   │   │   ├── product6.png
+│   │   │   ├── product7.png
+│   │   │   ├── product8.png
+│   │   │   ├── product9.png
+│   │   │   ├── product10.png
+│   │   │   └── logo.png
+│   │   │
+│   │   ├── games
+│   │   │   ├── extra_prd7.png
+│   │   │   ├── product11.png
+│   │   │   ├── product12.png
+│   │   │   ├── product13.png
+│   │   │   ├── product14.png
+│   │   │   ├── product15.png
+│   │   │   └── logo.png
+│   │   │
+│   │   ├── iconsAndCards
+│   │   │   ├── banner.png
+│   │   │   ├── cart.png
+│   │   │   └── logo_icon.png
+│   │   │
+│   │   └── others
+│   │       ├── extra_prd8.png
+│   │       ├── product16.png
+│   │       ├── product17.png
+│   │       ├── product18.png
+│   │       ├── product19.png
+│   │       ├── product20.png
+│   │       └── logo.png
+│   │
+│   └── styles
+│       ├── global.css
+│       ├── styleCategories.css
+│       └── styleProducts.css
 │
-└── styles
-    ├── global.css
-    ├── styleCategories.css
-    └── styleProducts.css
+├── LICENSE
+└── README.md
+
+
 ```
