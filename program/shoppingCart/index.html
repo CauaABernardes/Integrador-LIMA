@@ -35,65 +35,110 @@
         </header>
 
         <main class="carrinhoMain">
+
             <h2 class="sectionTitle">Seu Carrinho</h2>
 
-            <div class="carrinhoContainer">
+            <div class="carrinhoLayout">
 
-                <article class="produtoCarrinho">
-                    <img src="../src/images/actionsFigures/product1.png" alt="Darth Vader (Sobrevivente)" class="produtoImagem"/>
-                    <div class="produtoInfo">
-                        <h3>Darth Vader (Sobrevivente)</h3>
-                        <p class="preco">
-                            <span class="de">R$ 2.249,90</span>
-                            <span class="por">R$ 1.699,90</span>
-                        </p>
-                        <a href="#" class="btn">Remover</a>
-                    </div>
-                </article>
+                <div class="carrinhoContainer">
 
-                <article class="produtoCarrinho">
-                    <img src="../src/images/actionsFigures/product2.png" alt="Anakin Skywalker (Mantos Jedi)" class="produtoImagem"/>
-                    <div class="produtoInfo">
-                        <h3>Anakin Skywalker (Mantos Jedi)</h3>
-                        <p class="preco">
-                            <span class="de">R$ 1.249,90</span>
-                            <span class="por">R$ 749,90</span>
-                        </p>
-                        <a href="#" class="btn">Remover</a>
-                    </div>
-                </article>
+                    <article class="produtoCarrinho">
+                        <img src="../src/images/actionsFigures/product1.png" alt="Darth Vader (Sobrevivente)" class="produtoImagem">
+                        <div class="produtoInfo">
+                            <h3>Darth Vader (Sobrevivente)</h3>
+                            <p class="preco">
+                                <span class="de">R$ 2.249,90</span>
+                                <span class="por">R$ 1.699,90</span>
+                            </p>
+                            <a href="#" class="btn">Remover</a>
+                        </div>
+                    </article>
 
-                <article class="produtoCarrinho">
-                    <img src="../src/images/actionsFigures/product3.png" alt="Luke Skywalker Episódio V" class="produtoImagem"/>
-                    <div class="produtoInfo">
-                        <h3>Luke Skywalker (Episódio V)</h3>
-                        <p class="preco">
-                            <span class="por">R$ 999,90</span>
-                        </p>
-                        <a href="#" class="btn">Remover</a>
-                    </div>
-                </article>
+                    <article class="produtoCarrinho">
+                        <img src="../src/images/actionsFigures/product2.png" alt="Anakin Skywalker (Mantos Jedi)" class="produtoImagem">
+                        <div class="produtoInfo">
+                            <h3>Anakin Skywalker (Mantos Jedi)</h3>
+                            <p class="preco">
+                                <span class="de">R$ 1.249,90</span>
+                                <span class="por">R$ 749,90</span>
+                            </p>
+                            <a href="#" class="btn">Remover</a>
+                        </div>
+                    </article>
 
-                <article class="produtoCarrinho">
-                    <img src="../src/images/actionsFigures/extra_prd2.png" alt="Mandaloriano" class="produtoImagem"/>
-                    <div class="produtoInfo">
-                        <h3>Mandaloriano</h3>
-                        <p class="preco">
-                            <span class="por">R$ 1.099,90</span>
-                        </p>
-                        <a href="#" class="btn">Remover</a>
-                    </div>
-                </article>
+                    <article class="produtoCarrinho">
+                        <img src="../src/images/actionsFigures/product3.png" alt="Luke Skywalker Episódio V" class="produtoImagem">
+                        <div class="produtoInfo">
+                            <h3>Luke Skywalker (Episódio V)</h3>
+                            <p class="preco">
+                                <span class="por">R$ 999,90</span>
+                            </p>
+                            <a href="#" class="btn">Remover</a>
+                        </div>
+                    </article>
 
-            </div>
+                    <article class="produtoCarrinho">
+                        <img src="../src/images/actionsFigures/extra_prd2.png" alt="Mandaloriano" class="produtoImagem">
+                        <div class="produtoInfo">
+                            <h3>Mandaloriano</h3>
+                            <p class="preco">
+                                <span class="por">R$ 1.099,90</span>
+                            </p>
+                            <a href="#" class="btn">Remover</a>
+                        </div>
+                    </article>
 
-            <div class="resumoCarrinho">
-                <h3>Resumo do Pedido</h3>
-                <p>Subtotal: R$ 4.548,70</p>
-                <p>Desconto: R$ 549,70</p>
-                <p><strong>Total: R$ 3.999,00</strong></p>
-                <a href="#" class="btn">Finalizar Compra</a>
-            </div>
+                </div>
+
+                <div class="resumoCarrinho">
+
+                    <h3>Resumo do Pedido</h3>
+
+                    <details class="resumoExpandivel">
+                        <summary class="resumoToggle">Ver detalhes dos produtos</summary>
+
+                        <div class="itensResumo">
+
+                            <div class="itemResumo">
+                                <p class="produtoNome">Darth Vader (Sobrevivente)</p>
+                                <p class="produtoQtd">Qtd: 1</p>
+                                <p class="produtoPrecoUnit">Unit: R$ 1.699,90</p>
+                                <p class="produtoTotalItem">Total: R$ 1.699,90</p>
+                            </div>
+
+                            <div class="itemResumo">
+                                <p class="produtoNome">Anakin Skywalker (Mantos Jedi)</p>
+                                <p class="produtoQtd">Qtd: 1</p>
+                                <p class="produtoPrecoUnit">Unit: R$ 749,90</p>
+                                <p class="produtoTotalItem">Total: R$ 749,90</p>
+                            </div>
+
+                            <div class="itemResumo">
+                                <p class="produtoNome">Luke Skywalker (Episódio V)</p>
+                                <p class="produtoQtd">Qtd: 1</p>
+                                <p class="produtoPrecoUnit">Unit: R$ 999,90</p>
+                                <p class="produtoTotalItem">Total: R$ 999,90</p>
+                            </div>
+
+                            <div class="itemResumo">
+                                <p class="produtoNome">Mandaloriano</p>
+                                <p class="produtoQtd">Qtd: 1</p>
+                                <p class="produtoPrecoUnit">Unit: R$ 1.099,90</p>
+                                <p class="produtoTotalItem">Total: R$ 1.099,90</p>
+                            </div>
+
+                        </div>
+                    </details>
+
+                    <hr class="divisorResumo">
+
+                    <p>Subtotal: R$ 4.548,70</p>
+                    <p>Desconto: R$ 549,70</p>
+                    <p><strong>Total: R$ 3.999,00</strong></p>
+
+                    <a href="./payment/index.html" class="btn">Finalizar Compra</a>
+                </div>
+
         </main>
 
         <footer class="siteFooter">
@@ -110,7 +155,7 @@
                 <section class="footerCol">
                     <h3>Atendimento</h3>
                     <ul>
-                        <li><a href="#">Fale Conosco</a></li>
+                        <li><a href="../contact/index.html">Fale Conosco</a></li>
                         <li><a href="#">Central de Ajuda</a></li>
                         <li><a href="#">Trocas e Devoluções</a></li>
                         <li><a href="#">Política de Privacidade</a></li>

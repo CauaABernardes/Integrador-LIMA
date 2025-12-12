@@ -1,99 +1,96 @@
 .carrinhoMain {
     padding: 4rem 2rem;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
 }
 
-.carrinhoMain .sectionTitle {
+.sectionTitle {
     text-align: center;
     font-size: 2rem;
     color: #e0b10e;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
     text-transform: uppercase;
 }
 
-.carrinhoContainer {
+.carrinhoLayout {
     display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.carrinhoContainer {
+    display: flex;
+    flex-direction: column;
     gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    margin-bottom: 3rem;
 }
 
 .produtoCarrinho {
     background: #222;
     border-radius: 14px;
     padding: 1.3rem;
-    border: 2px solid transparent;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    gap: 1rem;
+    border: 2px solid transparent;
+    transition: .3s;
     color: #fff;
-    text-align: center;
-    transition: transform .3s, border-color .3s;
 }
 
 .produtoCarrinho:hover {
-    transform: translateY(-6px);
     border-color: #e0b10e;
+    transform: translateY(-4px);
 }
 
-.produtoCarrinho .produtoImagem {
-    width: 100%;
-    max-height: 25vh;
+.produtoImagem {
+    width: 120px;
+    height: 120px;
     object-fit: contain;
-    border-radius: 12px;
-    margin-bottom: 1rem;
     background: #111;
+    border-radius: 10px;
     padding: 10px;
 }
 
-.produtoCarrinho .produtoInfo {
+.produtoInfo {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
     justify-content: space-between;
-    width: 100%;
 }
 
 .produtoCarrinho h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #e0b10e;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
 }
 
-.produtoCarrinho .preco {
-    margin-bottom: 1.5rem;
+.preco {
+    margin-bottom: .8rem;
 }
 
-.produtoCarrinho .preco .de {
+.de {
     text-decoration: line-through;
     color: #aaa;
-    font-size: 0.9rem;
-    margin-right: 0.5rem;
+    margin-right: .4rem;
 }
 
-.produtoCarrinho .preco .por {
+.por {
     color: #e0b10e;
     font-size: 1.2rem;
     font-weight: bold;
 }
 
-.produtoCarrinho .btn {
+.btn {
     padding: 0.6rem 1.2rem;
     background: #e0b10e;
     color: #000;
-    font-weight: bold;
     border-radius: 6px;
-    border: none;
-    cursor: pointer;
     text-decoration: none;
-    transition: background .3s, transform .3s;
+    font-weight: bold;
+    transition: .3s;
 }
 
-.produtoCarrinho .btn:hover {
+.btn:hover {
     background: #000;
     color: #e0b10e;
-    transform: translateY(-3px);
+    border: solid 1px #e0b10e;
 }
 
 .resumoCarrinho {
@@ -101,8 +98,10 @@
     color: #fff;
     padding: 2rem;
     border-radius: 14px;
-    text-align: center;
     border: 2px solid #333;
+    height: fit-content;
+    position: sticky;
+    top: 20px;
 }
 
 .resumoCarrinho h3 {
@@ -112,7 +111,7 @@
 }
 
 .resumoCarrinho p {
-    margin: 0.5rem 0;
+    margin: .5rem 0;
     font-size: 1.1rem;
 }
 
@@ -122,18 +121,61 @@
 }
 
 .resumoCarrinho .btn {
+    display: block;
     margin-top: 1.5rem;
-    padding: 0.8rem 1.6rem;
-    background: #e0b10e;
-    color: #000;
-    font-weight: bold;
-    border-radius: 8px;
-    display: inline-block;
-    text-decoration: none;
+    text-align: center;
 }
 
-.resumoCarrinho .btn:hover {
-    background: #000;
+.resumoToggle {
+    cursor: pointer;
+    font-weight: bold;
     color: #e0b10e;
-    transform: translateY(-3px);
+    padding: .6rem;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    margin-bottom: .8rem;
+    list-style: none;
+}
+
+.resumoToggle::marker {
+    display: none;
+}
+
+.resumoToggle::after {
+    content: "▼";
+    float: right;
+    transition: .3s;
+    font-size: .9rem;
+}
+
+.resumoExpandivel[open] .resumoToggle::after {
+    transform: rotate(-180deg);
+}
+
+.itensResumo {
+    margin: 1rem 0;
+    background: #1a1a1a;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+.itemResumo {
+    padding: 0.7rem 0;
+    border-bottom: 1px solid #333;
+}
+
+.itemResumo:last-child {
+    border-bottom: none;
+}
+
+.produtoNome {
+    font-weight: bold;
+    color: #e0b10e;
+}
+
+.produtoQtd, .produtoPrecoUnit, .produtoTotalItem {
+    font-size: 0.95rem;
+    color: #ccc;
 }

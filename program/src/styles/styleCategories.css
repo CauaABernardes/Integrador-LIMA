@@ -89,4 +89,5 @@
 .btn:hover {
     background: #000;
     color: #ffe81f;
+    border: solid 1px #e0b10e;
 }

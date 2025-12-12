@@ -1,0 +1,85 @@
+.tituloPagina {
+    text-align: center;
+    font-size: 2rem;
+    color: #e0b10e;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 2.5rem;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 2rem;
+}
+
+.formContato {
+    background: #111;
+    padding: 2.5rem;
+    border-radius: 16px;
+    border: 2px solid #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.formContato .campo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.formContato label {
+    font-size: 1rem;
+    color: #e0b10e;
+    font-weight: bold;
+}
+
+.formContato input,
+.formContato select,
+.formContato textarea {
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background: #222;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color .3s, background .3s;
+}
+
+.formContato input:focus,
+.formContato select:focus,
+.formContato textarea:focus {
+    border-color: #e0b10e;
+    background: #1b1b1b;
+}
+
+.formContato input::placeholder,
+.formContato textarea::placeholder {
+    color: #aaa;
+}
+
+.btnEnviar {
+    margin-top: 1rem;
+    padding: 0.9rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background: #e0b10e;
+    color: #000;
+    cursor: pointer;
+    transition: background .3s, transform .3s;
+    width: fit-content;
+    align-self: center;
+}
+
+.btnEnviar:hover {
+    background: #000;
+    color: #e0b10e;
+    border: solid 1px #e0b10e;
+    transform: translateY(-3px);
+}

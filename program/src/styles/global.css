@@ -180,7 +180,7 @@ header ul {
 
 #pgAtual::after {
     width: 100%;
-    background: #e0b10e;
+    background-color: rgb(253, 39, 39);
 }
 
 /*ÍCONES*/
